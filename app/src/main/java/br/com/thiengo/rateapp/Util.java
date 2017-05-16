@@ -23,6 +23,7 @@ public class Util {
         twoStageRate
             .setShowAppIcon(true);
 
+
         /*
          * NÚMERO MÍNIMO DE ESTRELAS QUE ATIVARIA O DIALOG QUE
          * PERMITI A ABERTURA DA STORE PARA A AVALIAÇÃO.
@@ -31,7 +32,8 @@ public class Util {
          * ABERTO. O VALOR PADRÃO É 4.
          * */
         twoStageRate
-            .setThresholdRating(2);
+            .setThresholdRating(4);
+
 
         /*
          * CONDIÇÃO PARA QUE A RATE BOX SEJA APRESENTADA.
@@ -41,8 +43,9 @@ public class Util {
          * */
         twoStageRate
             .setInstallDays(0) // OU A CADA 5 DIAS
-            .setLaunchTimes(1) // OU A CADA 1 ABERTURA DO APP
+            .setLaunchTimes(0) // OU A CADA 1 ABERTURA DO APP
             .setEventsTimes(1); // OU A CADA 1 EVENTO PERSONALIZADO OCORRIDO
+
 
         /*
          * TIPO DA STORE. PODEMOS OPTAR PELA GOOGLE_PLAY (PADRÃO)
@@ -50,6 +53,7 @@ public class Util {
          * */
         twoStageRate
             .setStoreType(Settings.StoreType.GOOGLEPLAY);
+
 
         /*
          * TEXTO E RÓTULOS QUE SERÃO APRESENTADOS NA PRIMEIRA
@@ -61,16 +65,22 @@ public class Util {
             .setRatePromptNeverText("Não, obrigado")
             .setRatePromptDismissible(false);
 
+
         /*
          * TEXTOS E RÓTULOS QUE SERÃO APRESENTADOS NO SEGUNDO
          * DIALOG, DEPOIS DE O USUÁRIO TER INFORMADO AO MENOS
          * 4 ESTRELAS NA RATINGBAR.
          * */
+        String descricaoDialogConfirmacao = "Gostaria de " +
+            "colocar sua avaliação na Play Store? Isso nos " +
+            "motivaria a continuar evoluindo o aplicativo.";
+
         twoStageRate.setConfirmRateDialogTitle("Confirmar avaliação")
-                .setConfirmRateDialogDescription("Gostaria de colocar sua avaliação na Play Store? Isso nos motivaria a continuar evoluindo o aplicativo.")
+                .setConfirmRateDialogDescription( descricaoDialogConfirmacao )
                 .setConfirmRateDialogPositiveText("Sim")
                 .setConfirmRateDialogNegativeText("Não, Obrigado!")
-                .setConfirmRateDialogDismissible(true);
+                .setConfirmRateDialogDismissible(false);
+
 
         /*
          * TEXTOS E RÓTULOS QUE SERÃO APRESENTADOS NO SEGUNDO
@@ -81,8 +91,12 @@ public class Util {
          * ThresholdRating() ESTRLEAS É ALGO RUIM EM NOSSO
          * DOMÍNIO DO PROBLEMA.
          * */
+        String descricaoDialogFeedback = "Por favor, nos informe " +
+            "os problemas encontrados por ti no aplicativo, assim " +
+            "poderemos melhora-lo.";
+
         twoStageRate.setFeedbackDialogTitle("Em que podemos evoluir?")
-            .setFeedbackDialogDescription("Por favor, nos informe os problemas encontrados por ti no aplicativo, assim poderemos melhora-lo.")
+            .setFeedbackDialogDescription(descricaoDialogFeedback)
             .setFeedbackDialogPositiveText("Enviar")
             .setFeedbackDialogNegativeText("Não, obrigado!")
             .setFeedbackDialogDismissible(false)
@@ -99,6 +113,7 @@ public class Util {
                     context.startActivity(Intent.createChooser(intent, "Enviar e-mail"));
                 }
             });
+
 
         twoStageRate.showIfMeetsConditions();
     }
