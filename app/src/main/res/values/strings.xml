@@ -1,5 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Rate App</string>
     <string name="main_title">Rating App - Library</string>
-    <string name="main_inform">Permitindo que usuários frequentes de seu aplicativo possam avalia-lo e assim, com boas avaliações, você consiga ainda mais instalações para ele.</string>
+    <string name="main_inform">
+        Permitindo que usuários frequentes de seu aplicativo
+        possam avalia-lo e assim, com boas avaliações, você
+        consiga ainda mais instalações para ele.
+    </string>
 </resources>
