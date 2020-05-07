@@ -39,5 +39,5 @@ Caso você tenha dúvidas ou dicas sobre os projetos apresentados em livro, ent�
 Não deixe de conhecer também os outros livros e curso do mesmo autor:
 
 - [Desenvolvedor Kotlin Android - Bibliotecas para o dia a dia](https://www.thiengo.com.br/livro-desenvolvedor-kotlin-android);
-- [Receitas Para Desenvolvedores Android](https://www.thiengo.com.br/livro-receitas-para-desenvolvedores-android);
+- [Refatorando Para Programas Limpos](https://www.thiengo.com.br/livro-refatorando-para-programas-limpos);
 - [Android: Prototipagem Profissional de Aplicativos](https://www.udemy.com/course/android-prototipagem-profissional-de-aplicativos/?locale=pt_BR&persist_locale=).
