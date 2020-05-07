@@ -4,7 +4,7 @@ Projeto Java Android do livro "Receitas Para Desenvolvedores Android".
 
 Projeto apresentado no **Capítulo 1** do livro, mais precisamente o capítulo "Solicitação de Avaliação de Aplicativo na Play Store".
 
-<img src="https://www.thiengo.com.br/img/livro/receitas-para-desenvolvedores-android/github/aplicativo-android-capitulo-01.jpg" alt="Telas do aplicativo Android do capítulo 9" height="360">
+<img src="https://www.thiengo.com.br/img/livro/receitas-para-desenvolvedores-android/github/aplicativo-android-capitulo-01.jpg" alt="Telas do aplicativo Android do capítulo 1" height="360">
 
 **Observação importante:** para o total entendimento do projeto é preciso ter em mãos o livro "Receitas Para Desenvolvedores Android" com o capítulo 1 já aberto, pois as explicações detalhadas de todo o projeto deste repositório estarão nesta parte do livro.
 
